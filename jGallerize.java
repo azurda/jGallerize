@@ -17,14 +17,16 @@ public class Gallerize{
 		String s = "<html lang=en><head><meta charset=utf-8><title>"
 				+ "jGallerize template</title>"
 				+ "<meta name=description content=HTML jGallerize>"
-				+ "<link rel=stylesheet type=text/css href=template.css>"
-				+ "<meta name=author content=Nando><link rel=stylesheet href=css/styles.css?v=1.0>"
+				+ "<link rel=\"stylesheet\" type=\"text/css\" href=\"template.css\">"
+				+ "<meta name=author content=Nando>"
 				+ "<!--[if lt IE 9]> "
 				+ " <script src=http://html5shiv.googlecode.com/svn/trunk/html5.js></script> "
 				+ " <![endif]--></head><body><center><hr><h1>GENERATED GALLERY</h1></hr> <br> $IMGCODE$ <hr></hr><script src=js/scripts.js></script></center></body></html>";
 		
 		// Create file
 		Path p = Paths.get("./gallery.html");
+		
+		
 		
 		final String dir = System.getProperty("user.dir");
 		File folder = new File(dir);
@@ -45,7 +47,7 @@ public class Gallerize{
 				}
 				
 				
-				if(i % 10 == 0)
+				if(0 == i % 10)
 				{
 					finalcode += "<br>";
 				}
