@@ -35,7 +35,7 @@ public class Gallerize{
 				finalcode += modStr;
 				++i;
 				// create a new line each 10 files
-				if(i % 10 == 0)
+				if(0 == i % 10)
 				{
 					finalcode += "<br>";
 				}
